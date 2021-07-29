@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "281c397c-a8df-43d8-87f4-3c93d814dd89",
+		"name": "TSNode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jonhDoe@example.com\",\r\n    \"firstName\": \"Jonh\",\r\n    \"lastName\": \"Doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:909/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "909",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
